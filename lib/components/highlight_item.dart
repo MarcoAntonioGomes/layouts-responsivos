@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:panucci_ristorante/screens/checkout.dart';
 import 'package:panucci_ristorante/themes/app_colors.dart';
 
 class HighlightItem extends StatelessWidget {
@@ -36,7 +37,11 @@ final String itemDescription;
                 Align(
                   alignment: Alignment.centerRight,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                        return const Checkout();
+                      }));
+                    },
                     style: AppColors.buttonStyle,
                     child: const Text('Pedir'),
                   ),

@@ -51,7 +51,7 @@ class Checkout extends StatelessWidget {
                 },
                 childCount: items.length,
               )),
-              SliverToBoxAdapter(
+              const SliverToBoxAdapter(
                   child: Padding(
                     padding: EdgeInsets.only(bottom: 16.0),
                     child: Text(
@@ -59,10 +59,10 @@ class Checkout extends StatelessWidget {
                       style: TextStyle( fontSize: 24),
                     ),
                   )),
-              SliverToBoxAdapter(
+              const SliverToBoxAdapter(
                 child: PaymentMethod(),
               ),
-              SliverToBoxAdapter(
+              const SliverToBoxAdapter(
                   child: Padding(
                     padding: EdgeInsets.only(bottom: 16.0),
                     child: Text(
@@ -70,7 +70,7 @@ class Checkout extends StatelessWidget {
                       style: TextStyle( fontSize: 24),
                     ),
                   )),
-              SliverToBoxAdapter(
+              const SliverToBoxAdapter(
                 child: PaymentTotal(),
               )
             ],
